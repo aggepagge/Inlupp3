@@ -17,14 +17,6 @@ namespace Interaction.Model
             this.bottomRight = bottomRight;
         }
 
-        public static FloatRectangle createFromTopLeft(Vector2 theTopLeft, Vector2 boxSize)
-        {
-            Vector2 topLeft = theTopLeft;
-            Vector2 bottomRight = theTopLeft + boxSize;
-
-            return new FloatRectangle(topLeft, bottomRight);
-        }
-
         public static FloatRectangle createFromCenter(Vector2 center, float size)
         {
             Vector2 topLeft = new Vector2(center.X - size / 2.0f, center.Y - size / 2.0f);
