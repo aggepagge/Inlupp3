@@ -16,8 +16,6 @@ namespace Interaction.Model
         private float boardLogicWidth = XNAController.boardLogicWidth;
         private float boardLogicHeight = XNAController.boardLogicHeight;
 
-        //Prop för bollen som modellen hanterar
-        //internal Ball Ball { get; set; }
         private static int NUMBER_OF_BALLS = 10;
         private List<Ball> balls;
         private float aimDimention; 
