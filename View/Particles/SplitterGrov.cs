@@ -14,8 +14,8 @@ namespace Interaction.View.Particles
         private Vector2 possition;
         private Vector2 speed;
         private Vector2 gravity;
-        private static float minSpeed = 1.6f;
-        private static float maxSpeed = 9.0f;
+        private static float minSpeed = 0.3f;
+        private static float maxSpeed = 1.6f;
         private static float minSize = 0.01f;
         private static float maxSize = 0.02f;
 
@@ -58,7 +58,7 @@ namespace Interaction.View.Particles
             speedIncreaseY = speed.Y * 80 / scale;
 
             //gravitationen i X och Y-led
-            gravity = new Vector2(0.0f, 20.4f);
+            gravity = new Vector2(0.0f, 4.4f);
 
             DeleateMe = false;
             visualSize = (int)(scale * size);
